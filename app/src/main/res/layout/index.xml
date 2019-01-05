@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar_options"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="54dp"-->
+        <!--app:menu="@menu/menu_options"-->
+        <!--android:layout_alignParentTop="true" >-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--android:text="Catalog"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_below="@id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+        <!--android:textAllCaps="true"-->
+        <!--tools:textStyle="bold" />-->
+
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bn_main"
+        android:layout_below="@+id/toolbar_options"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bn_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/grey_50"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/selector_bottom_sheet"
+        app:itemTextColor="@drawable/selector_bottom_sheet"
+        app:menu="@menu/bottom_sheet" />
+
+
+
+</RelativeLayout>

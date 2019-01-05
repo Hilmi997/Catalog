@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bnv1"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        android:layout_marginLeft="80dip"
+        />
+
+    <item
+        android:id="@+id/bnv2"
+        android:title="@string/saya"
+        android:icon="@drawable/icon_users" />
+
+
+</menu>
